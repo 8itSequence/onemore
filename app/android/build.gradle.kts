@@ -16,6 +16,7 @@ android {
 		versionName = "0.0.1"
 
 		testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+		vectorDrawables.useSupportLibrary = true
 	}
 
 	compileOptions {
@@ -30,10 +31,17 @@ android {
 
 dependencies {
 	implementation(Dependency.Kotlin.stdLib8)
+
+	implementation(Dependency.Android.MATERIAL)
+
 	implementation(Dependency.Android.X.appcompatV7)
+	implementation(Dependency.Android.X.constraintLayout)
 	implementation(Dependency.Android.X.core)
+	implementation(Dependency.Android.X.drawable)
+	implementation(Dependency.Android.X.drawableAnim)
 
 	testImplementation(Dependency.JUnit.JUNUT_4)
+
 	androidTestImplementation(Dependency.Android.X.Test.ext)
 	androidTestImplementation(Dependency.Android.X.Test.espresso)
 }

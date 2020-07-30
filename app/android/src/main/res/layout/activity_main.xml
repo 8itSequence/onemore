@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/ltRootMain"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/colorPrimary">
+
+	<include layout="@layout/content_contacts" />
+
+	<com.google.android.material.bottomappbar.BottomAppBar
+		android:id="@+id/bottomAppBar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:layout_gravity="bottom"
+		style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
+		app:backgroundTint="@color/colorPrimaryDark"
+		app:fabAnimationMode="slide"
+		app:fabAlignmentMode="center"
+		app:hideOnScroll="true"
+		app:menu="@menu/bottom_nav_menu" />
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/btnAddContact"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:backgroundTint="@color/colorAccent"
+
+		app:fabSize="auto"
+		app:hideOnScroll="true"
+		app:layout_behavior=".util.FABScrollBehavior"
+		app:srcCompat="@drawable/ic_add"
+		app:tint="@color/colorWhite"
+		app:layout_anchor="@id/bottomAppBar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

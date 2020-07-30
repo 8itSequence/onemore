@@ -1,5 +1,7 @@
 object Version {
 	object Android {
+		const val MATERIAL: String = "1.2.0-rc01"             // https://mvnrepository.com/artifact/com.google.android.material/material
+
 		object Sdk {
 			const val BUILD: String = "30.0.1"
 			const val COMPILE: Int = 29                       // https://source.android.com/setup/start/build-numbers
@@ -10,6 +12,9 @@ object Version {
 		object X {
 			const val APP_COMPAT_V7: String = "1.1.0"         // https://mvnrepository.com/artifact/androidx.appcompat/appcompat
 			const val CORE_KTX: String = "1.3.0"              // https://mvnrepository.com/artifact/androidx.core/core-ktx
+			const val CONSTRAINT_LAYOUT: String = "1.1.3"     // https://mvnrepository.com/artifact/androidx.constraintlayout/constraintlayout
+			const val VECTOR_DRAWABLE: String = "1.1.0"       // https://mvnrepository.com/artifact/androidx.vectordrawable/vectordrawable
+			const val VECTOR_DRAWABLE_ANIM: String = "1.1.0"  // https://mvnrepository.com/artifact/androidx.vectordrawable/vectordrawable-animated
 
 			object Test {
 				const val EXT_JUNIT: String = "1.1.1"         // https://mvnrepository.com/artifact/androidx.test.ext/junit

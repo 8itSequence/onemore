@@ -3,9 +3,14 @@
 object Dependency {
 
 	object Android {
+		const val MATERIAL = "com.google.android.material:material:${Version.Android.MATERIAL}"
+
 		object X {
 			val appcompatV7 = androidx("appcompat:appcompat", Version.Android.X.APP_COMPAT_V7)
 			val core = androidx("core:core-ktx", Version.Android.X.CORE_KTX)
+			val constraintLayout = androidx("constraintlayout:constraintlayout", Version.Android.X.CONSTRAINT_LAYOUT)
+			val drawable = androidx("vectordrawable:vectordrawable", Version.Android.X.VECTOR_DRAWABLE)
+			val drawableAnim = androidx("vectordrawable:vectordrawable-animated", Version.Android.X.VECTOR_DRAWABLE_ANIM)
 
 			object Test {
 				val espresso = androidxTest("espresso:espresso-core", Version.Android.X.Test.ESPRESSO_CORE)
